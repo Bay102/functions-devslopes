@@ -14,7 +14,8 @@
  */
 
 // Your code goes here...
-
+const doesArrayIncludeItemsBetweenVals = (arr, val1, val2) =>
+  arr.some((num) => num > val1 && num < val2);
 
 
 /**
@@ -30,6 +31,16 @@
  * getValueWithConditionOne(40, 40) => 80;
  * getValueWithConditionOne(20, 30) => 100;
  */
+ function getValueWithConditionOne(num1, num2) {
+  return num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+}
+
+const getValueWithConditionTwo = (num1, num2) =>
+  num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+
+const getValueWithConditionThree = function (num1, num2) {
+  return num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+};
 
 
 
